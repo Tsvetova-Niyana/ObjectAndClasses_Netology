@@ -1,6 +1,8 @@
-from classes import Student, Mentor, Lecturer, Reviewer
+from classes import Student, Lecturer, Reviewer
+
 """Создайте по 2 экземпляра каждого класса, вызовите все созданные методы
 """
+
 
 def avg_grades_students_by_course(stud_list, course):
     """Функция для подсчета средней оценки за домашние задания по всем студентам в рамках конкретного курса
@@ -18,6 +20,7 @@ def avg_grades_students_by_course(stud_list, course):
     avg_grades = round(sum_grades / count, 2)
 
     return f"Средний балл за домашние задания по всем студентам в рамках курса {course} - {avg_grades} балл\n"
+
 
 def avg_grades_lectors_by_course(lect_list, course):
     """Функция для подсчета средней оценки за лекции всех лекторов в рамках курса
@@ -39,7 +42,6 @@ def avg_grades_lectors_by_course(lect_list, course):
 
 
 if __name__ == '__main__':
-
     # Создаем студентов, заполняем данные о завершенных и изучаемых курсах
     student_1 = Student('Лев', 'Соловьев', 'мужчина')
     student_1.courses_in_progress += ['Python', 'Git']
